@@ -1,0 +1,40 @@
+.p-pickup{
+  position: relative;
+
+  &:after{
+    background: url('../images/top-Pickup.svg');
+    position: absolute;
+    content: '';
+    width: 88%;
+    height: 240px;
+    top: 0;
+    right: 0;
+  }
+  
+}
+
+@media (min-width: 768px){
+  .p-pickup{
+
+    &:after{
+    width: 48%;
+    height: 240px;
+    top: 50%;
+    left: 0;
+    z-index: -1;
+  }
+  }
+}
+
+@media (min-width: 1024px){
+  .p-pickup{
+
+    &:after{
+    width: 40%;
+    height: 320px;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+  }
+  }
+}

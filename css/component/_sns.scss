@@ -1,0 +1,29 @@
+@use "../setting/setting";
+
+.c-sns{
+  padding: 20px 0 36px;
+}
+
+.c-sns__list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.c-sns__item{
+  width: 48%;
+  padding-top: 20px;
+
+  p{
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px){
+  .c-sns{
+    padding: 40px 0;
+  }
+  .c-sns__item{
+    width: 22%;
+  }
+}

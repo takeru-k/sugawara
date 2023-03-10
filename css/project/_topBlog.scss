@@ -1,0 +1,75 @@
+@use "../setting/setting";
+
+.p-topBlog{
+  background: setting.$color-accent2;
+  padding: 40px 0;
+}
+
+.p-topBlog__heading{
+  line-height: 1.4;
+
+  span{
+    color: setting.$color-main;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  h2{
+    font-size: 34px;
+    font-weight: normal;
+  }
+}
+
+
+.p-topBlog__meta{
+  padding-top: 12px;
+
+  span{
+    font-size: 14px;
+    color: setting.$color-pink;
+    padding: 4px;
+  }
+
+  time{
+    font-size: 14px;
+    padding-left: 8px;
+    color: setting.$color-pink;
+    border-left: solid 1px #c7887f;
+  }
+}
+
+.p-topBlog__item{
+  padding-top: 20px;
+  h3{
+    font-size: 18px;
+    padding-top: 8px;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .p-topBlog__item{
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .p-topBlog__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p-topBlog__list{
+    display: flex;
+    width: 88%;
+  }
+
+  .p-topBlog__heading{
+    writing-mode: vertical-rl;
+    width: 8%;
+  }
+
+  .p-topBlog__item{
+    margin-right: 20px;
+  }
+}

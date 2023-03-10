@@ -1,0 +1,52 @@
+@use "../setting/setting";
+
+.p-topics{
+  padding: 40px 0;
+}
+
+.p-topics__meta{
+  font-size: 14px;
+  padding-top: 12px;
+}
+
+.p-topics__texts{
+  h2{
+    font-size: 18px;
+    padding-top: 4px;
+  }
+
+  p{
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: 768px){
+  .p-topics__body{
+    display: flex;
+    position: relative;
+
+    &:before{
+      content: '';
+      position: absolute;
+      background: #f9f9f9;
+      height: 100%;
+      left: -48px;
+      top: 32px;
+      width: 108%;
+      z-index: -1;
+    }
+  }
+
+  .p-topics__img{
+    width: 40%;
+
+    img{
+      height: 100%;
+    }
+  }
+
+  .p-topics__contents{
+    width: 55%;
+    padding: 40px 0 0 48px;
+  }
+}

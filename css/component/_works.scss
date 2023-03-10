@@ -1,0 +1,65 @@
+@use "../setting/setting";
+
+.c-works{
+  padding-top: 20px;
+}
+
+.c-works__item{
+  padding-bottom: 24px;
+
+  span{
+    font-size: 14px;
+    color: #F9B0B0;
+    border: 1px solid #F9B0B0;
+    padding: 2px 4px;
+    margin-top: 8px;
+    display: inline-block;
+  }
+
+  h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 4px;
+  }
+
+  p{
+    font-size: 14px;
+    padding-top: 4px;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .c-works__item{
+    border-bottom: 1px solid #ddd;
+  }
+
+  .c-works__item:not(:first-child){
+    padding-top: 28px;
+  }
+}
+
+
+@media (min-width: 768px){
+  .c-works{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .c-works__item{
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-works{
+    &:after{
+      content: '';
+      display: block;
+      width: 32%;
+    }
+  }
+  .c-works__item{
+    width: 32%;
+  }
+}

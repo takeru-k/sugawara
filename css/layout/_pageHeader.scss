@@ -1,0 +1,65 @@
+@use "../setting/setting";
+
+.l-pageHeader{
+  padding-top: 60px;
+  position: relative;
+}
+
+.l-pageHeader__heading{
+  writing-mode: vertical-rl;
+  position: absolute;
+  top: 120px;
+  left: 28px;
+  line-height: 1.4;
+
+  span{
+    color: setting.$color-main;
+  }
+
+  h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+}
+
+.l-pageHeader__img{
+  width: 70%;
+  margin-left: 30%;
+  
+
+  img{
+    height: 50vh;
+  }
+}
+
+@media (min-width: 768px){
+  .l-pageHeader__img{
+    width: 80%;
+    margin-left: 20%;
+
+    img{
+      height: 340px;
+      width: 100%;
+    }
+  }
+
+  .l-pageHeader__heading{
+    left: 48px;
+  }
+}
+
+@media (min-width: 1024px){
+  .l-pageHeader{
+    padding-top: 0;
+  }
+
+  .l-pageHeader__img{
+    width: 88%;
+    margin-left: 12%;
+
+    img{
+      height: 400px;
+      width: 100%;
+    }
+  }
+}

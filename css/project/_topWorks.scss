@@ -1,0 +1,144 @@
+@use "../setting/setting";
+
+.p-topWorks{
+  margin-top: 360px;
+  background: setting.$color-accent2;
+  padding: 40px 0;
+}
+
+.p-topWorks__heading{
+  line-height: 1.4;
+
+  span{
+    color: setting.$color-main;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+}
+
+
+
+.p-topWorks__header{
+  padding-top: 4px;
+
+  span{
+    font-size: 14px;
+    color: setting.$color-pink;
+
+    padding: 4px;
+  }
+
+  h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-top: 4px;
+  }
+
+  p{
+    font-size: 14px;
+    padding-top: 4px;
+  }
+}
+
+.p-topWorks__list{
+  padding-top: 20px;
+}
+
+@media (min-width: 768px){
+  .p-topWorks{
+    margin-top: 40px;
+    position: relative;
+    padding: 64px 0;
+  }
+
+  .p-topWorks__inner{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .p-topWorks__heading{
+    width: 12%;
+    padding-right: 40px;
+    writing-mode: vertical-rl;
+  }
+
+  .swiper-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.swiper-slide{
+  margin-right: 20px;
+}
+
+.p-topWorks__inner{
+  padding-left: 6%;
+  margin: 0 auto;
+}
+ 
+@media (min-width: 1024px){
+  .p-topWorks{
+    padding: 120px 0;
+  }
+
+  .p-topWorks__heading{
+    h2{
+      font-size: 34px;
+    }
+  }
+}
+
+.swiper-pagination-bullets {
+    display: none;
+}
+
+.swiper{
+  position: relative;
+}
+
+/* 幅・高さを指定 */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 50px;
+  width: 50px;
+}
+ 
+/* 矢印を消す、画像に変更 */
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 40px;
+  width: 40px;
+  margin: auto;
+}
+ 
+/* 前に戻る画像パス */
+.swiper-button-prev:after {
+  background-image: url(../images/icon/arrow-before.svg);
+}
+/* 次に進む画像パス */
+.swiper-button-next:after {
+  background-image: url(../images/icon/arrow-next.svg);
+}
+
+.swiper-btn{
+  display: none;
+
+  @media (min-width: 1024px){
+    position: absolute;
+    display: flex;
+    top: -40px;
+    left: 80%;
+    width: 140px;
+  }
+  
+}

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>菅原工務店</title>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="l-header">
+  <div class="l-header__inner">
+    <div class="l-header__logos">
+      <div class="l-header__logo">
+        <a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
+      </div><!-- /.l-header__logo -->
+      <div class="l-header__logo">
+        <img src="images/logo/logo-pana.svg" alt="">
+      </div><!-- /.l-header__logo -->
+    </div><!-- /.l-header__logos -->
+
+     <button type="button" class="c-hamburger js-btn">
+      <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
+    </button><!-- /.c-hamburger -->
+
+    <nav class="l-header__nav">
+      <ul class="l-header__menu">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="feature.html">特長</a></li>
+        <li><a href="newly.html">新築</a></li>
+        <li><a href="reform.html">リフォーム</a></li>
+        <li><a href="about.html">会社概要</a></li>
+        <li><a href="works.html">施工事例</a></li>
+        <li><a href="blog.html">ブログ</a></li>
+        <li class="l-header__contact"><a href="contact.html">お問い合わせ</a></li>
+      </ul><!-- /.l-header__menu -->
+    </nav>
+  </div><!-- /.l-header__inner -->
+</header><!-- /.l-header -->  
+
+<div class="l-pageHeader">
+  <div class="l-pageHeader__heading">
+    <span>contact</span>
+    <h1>お問い合わせ・来店予約</h1>
+  </div><!-- /.l-pageHeader__heading -->
+  <div class="l-pageHeader__img">
+    <img src="images/sample1.jpeg" alt="">
+  </div><!-- /.l-pageHeader__img -->
+</div><!-- /.l-pageHeader -->
+
+<main>
+  <section class="c-section">
+    <div class="l-inner">
+      <div class="c-section__heading">
+        <span>reservation</span>
+        <h2>ご相談・ご来店について</h2>
+      </div><!-- /.c-section__heading -->
+
+              <div class="p-contact__wrapper">
+          <p class="p-contact__intro">家づくりやリフォームについて、お気軽にご相談ください。専門のスタッフが詳しく内容をお聞きし、理想を実現するプランをご提案いたします。</p>
+          <p>ご来店は予約をしていただけますと、お待たせすることなくスムーズに対応することができます。ご予約状況は下記をご参照ください。</p>
+          <p>お問い合わせお待ちしております。</p>
+
+          <div class="p-contact__item">
+            <h3 class="p-contact__heading">ご予約状況</h3><!-- /.p-contact__heading -->
+
+            <div class="p-contact__content">
+              <img src="images/calender.png" alt="">
+            </div><!-- /.p-contact__content -->
+          </div><!-- /.p-contact__item -->
+
+          <div class="p-contact__item">
+            <h3 class="p-contact__heading">お電話でのお問い合わせ</h3><!-- /.p-contact__heading -->
+
+            <div class="p-contact__content">
+              <div class="p-contact__info">
+                <a href="tel:0198-24-1459">0198-24-1459</a>
+                <span>受付時間: 平日8:30~17:30</span>
+              </div><!-- /.p-contact__info -->
+            </div><!-- /.p-contact__content -->
+          </div><!-- /.p-contact__item -->
+
+          <div class="p-contact__item">
+            <h3 class="p-contact__heading">LINEでのお問い合わせ</h3><!-- /.p-contact__heading -->
+
+            <div class="p-contact__content">
+              <div class="p-contact__info">
+                <div class="-line">
+                  <p><a href="">こちら</a>から友だち登録お願いします</p>
+                </div><!-- /.-line -->
+              </div><!-- /.p-contact__info -->
+            </div><!-- /.p-contact__content -->
+          </div><!-- /.p-contact__item -->
+
+          <div class="p-contact__item">
+            <h3 class="p-contact__heading">お問い合わせフォーム</h3><!-- /.p-contact__heading -->
+
+            <div class="p-contact__content">
+              <div class="c-form">
+          <table class="contactTable">
+            <tbody>
+              <tr>
+              <th>
+                <div class="inputLabel" id="attribute">内容選択
+                </div>
+              </th>
+              <td>
+                <div class="inputField">
+                  <ul class="radioList_hr" aria-labelledby="attribute">
+                    <li>
+                      <label>
+                        <input type="radio" name="attribute" value="法人" checked required>
+                        <span>新築</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="attribute" value="個人" required>
+                        <span>リフォーム</span>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                        <input type="radio" name="attribute" value="個人" required>
+                        <span>修繕等</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="company" class="inputLabel">お名前</label><span class="require">必須</span>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="text" id="company" name="company">
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email" class="inputLabel">メールアドレス
+                  <span class="require">必須</span>
+                </label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="email" id="email" name="email" placeholder="yamada@sample.co.jp" required>
+                  <p class="errorText">正しい形式のメールアドレスを入力してください。</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="email" class="inputLabel">メールアドレス再入力
+                  <span class="require">必須</span>
+                </label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="email" id="email" name="email" placeholder="yamada@sample.co.jp" required>
+                  <p class="errorText">正しい形式のメールアドレスを入力してください。</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th>
+                <label for="company" class="inputLabel">お電話番号</label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <input type="text" id="company" name="company">
+              </td>
+            </tr>
+            
+            <tr>
+              <th>
+                <label for="contact_msg" class="inputLabel">お問合せ内容
+                  <span class="require">必須</span>
+                </label>
+              </th>
+              <td>
+                <div class="inputField">
+                  <textarea name="contact_msg" id="contact_msg" cols="30" rows="10" required></textarea>
+                  <p class="errorText">お問合せ内容を入力してください。</p>
+                </div>
+              </td>
+            </tr>
+            </tbody>
+          </table>
+
+          <div class="privacyBox">
+            <p>「<a href="" target="_blank" rel="noopener noreferrer">個人情報の取り扱いについて</a>」をご確認いただき、同意して送信してください。</p>
+            
+          </div>
+
+          <div class="formBtns">
+            <button class="buttonAction">送信する</button>
+          </div>
+        </div><!-- /.c-form -->
+            </div><!-- /.p-contact__content -->
+          </div><!-- /.p-contact__item -->
+
+          
+        </div><!-- /.p-contact__wrapper -->
+
+
+</main>
+
+<footer class="l-footer">
+    <div class="l-inner">
+      <div class="l-footer__content">
+        <div class="l-footer__info">
+          <h1>株式会社菅原工務店</h1>
+          <ul>
+            <li>〒025-0091<br>岩手県花巻市西大通り二丁目11番25号</li>
+            <li>tel:<a href="tel:0198-24-1459">0198-24-1459</a></li>
+          </ul>
+        </div><!-- /.l-footer__info -->
+
+        <ul class="l-footer__menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="feature.html">特長</a></li>
+          <li><a href="newly.html">新築</a></li>
+          <li><a href="reform.html">リフォーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="works.html">施工事例</a></li>
+          <li><a href="blog.html">ブログ</a></li>
+          <li><a href="blog.html">お問い合わせ</a></li>
+        </ul><!-- /.l-footer__menu -->
+      </div><!-- /.l-footer__content -->
+
+      <small class="l-footer__copy"><a href="https://web-iwate.com/">&copy; Knowledge Service, inc.</a></small><!-- /.l-footer__copy -->
+    </div><!-- /.l-inner -->
+  </footer><!-- /.l-footer -->
+
+
+
+  
+<script
+  src="https://code.jquery.com/jquery-3.6.3.min.js"
+  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>

@@ -1,0 +1,57 @@
+@use "../setting/setting";
+.c-article{
+  padding: 40px 0 60px;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.c-article__header{
+  h1{
+    font-size: 20px;
+    padding-top: 12px;
+  }
+}
+
+.c-article__thumb{
+  margin-top: 16px;
+
+  img{
+    margin-top: 32px;
+    max-height: 440px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.c-article__body{
+  margin-top: 32px;
+
+  h2{
+    font-size: 20px;
+  }
+
+  p{
+    margin-top: 32px;
+  }
+
+  img{
+    margin-top: 32px;
+    max-height: 440px;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px){
+  .c-article__header{
+    h1{
+      font-size: 28px;
+    }
+  }
+
+  .c-article__body{
+    h2{
+      font-size: 24px;
+    }
+  }
+}
