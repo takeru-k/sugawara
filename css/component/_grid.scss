@@ -1,10 +1,30 @@
 @use "../setting/setting";
+/*================================
+	余白調整
+=================================*/
+.c-grid:not(:last-child){
+  margin: 24px 0 40px;
+
+  @media (min-width: 768px){
+    margin: 64px 0 120px;
+  }
+}
 
 @media (min-width: 768px){
+  .c-grid:last-child{
+    margin-bottom: 64px;
+  }
+}
+
+/*================================
+	レイアウト
+=================================*/
+@media (min-width: 768px){
+
   .c-grid__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
   }
 
   .c-grid__item:first-child{
@@ -20,5 +40,37 @@
   .c-grid__item:nth-child(3){
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+  }
+}
+
+/*================================
+	背景
+=================================*/
+  .c-grid__container{
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: "";
+      background: #F5F3EE;
+      z-index: -1;
+      top: -20px;
+      right: -20px;
+      width: 140px;
+      height: 140px;
+    }
+  }
+
+@media (min-width: 1024px){
+  
+  .c-grid__container{
+    position: relative;
+
+    &:after{
+      top: 0;
+      left: -60px;
+            width: 200px;
+      height: 200px;
+    }
   }
 }

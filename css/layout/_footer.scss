@@ -1,51 +1,84 @@
 @use "../setting/setting";
 
 .l-footer{
-  border-top: 1px solid #dddddd;
   padding: 28px 0 12px;
+  background: #A99B8E;
+  color: #eee;
 }
 
 .l-footer__info{
   h1{
-    font-size: 18px;
-    font-family: setting.$font-serif;
-  }
-  ul{
-    padding-top: 16px;
+    width: 240px;
+
+    img{
+      object-fit: cover;
+    }
   }
 }
 
+.l-footer__pana{
+  padding-top: 8px;
 
+  img{
+    display: block;
+    object-fit: cover;
+    margin-top: 8px;
+    width: 240px;
+    height: 100%;
+  }
+}
+
+.l-footer__phrase{
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 8px;
+  
+  p{
+    color: #eee;
+  }
+}
 
 .l-footer__copy{
-  text-align: center;
-  color: #999;
+  text-align: right;
+  color: #ccc;
   display: block;
-  padding-top: 40px;
+  font-size: 12px;
 }
 
 @media not all and (min-width: 1024px){
   .l-footer__menu{
     padding-top: 16px;
     
-
     li{
       position: relative;
       padding-left: 18px;
       margin-bottom: 16px;
+      font-size: 14px;
 
       &:before {
         position: absolute;
         content: "";
         width: 8px;
         height: 16px;
-        background: url(../images/icon/icon-arrow.svg) no-repeat center
+        background: url(../images/footer/icon-arrow-white.svg) no-repeat center
           center/cover;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
       }
     }
+  }
+
+  .l-footer__copy{
+    margin-top: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 768px){
+  .l-footer{
+    padding: 54px 0 12px;
   }
 }
 
@@ -57,28 +90,56 @@
   .l-footer__content{
     display: flex;
     justify-content: space-between;
-    
+
   }
 
   .l-footer__info{
     padding-top: 0;
-
     h1{
-      padding-bottom: 12px;
-    }
-
-    li{
-      padding-bottom: 8px;
+      width: 300px;
+      margin-top: -28px;
     }
   }
 
   .l-footer__menu{
     padding-top: 0;
     display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-left: auto;
 
     li{
-      padding-left: 48px;
+      padding-top: 20px;
+      margin-left: 48px;
+      font-size: 14px;
       writing-mode: vertical-rl;
+      letter-spacing: 4px;
+      position: relative;
+      transition: .5s;
+
+      &:hover{
+        opacity: .6;
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 16px;
+        background: url(../images/footer/icon-arrow-down.svg) no-repeat center
+          center/cover;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .l-footer__pana{
+    margin-top: 40px;
+
+    img{
+      width: 240px;
     }
   }
 }

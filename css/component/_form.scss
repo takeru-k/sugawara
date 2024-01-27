@@ -213,7 +213,7 @@ caption, th {
 ----------------------------------------*/
 /*ラベル*/
 .inputLabel {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /*サブラベル*/
@@ -228,7 +228,7 @@ caption, th {
   display: inline-block;
   margin-left: 10px;
   padding: 0 10px;
-  background: setting.$color-accent;
+  background: setting.$color-main;
   color: #fff;
   font-weight: normal;
   font-size: 12px;
@@ -259,9 +259,13 @@ caption, th {
   }
 }
 
-/*法人・個人*/
+
+
+@media (min-width: 768px){
+  /*法人・個人*/
 .radioList_hr {
   display: flex;
+}
 }
 
 /*エラーメッセージ*/
@@ -330,8 +334,6 @@ caption, th {
   border: 2px solid setting.$color-main;
   background: setting.$color-main;
   color: #fff;
-  font-size: 18px;
-  font-weight: bold;
   text-decoration: none;
   text-align: center;
   letter-spacing: 0.2em;

@@ -1,0 +1,88 @@
+@use "../setting/setting";
+
+.p-feature__list{
+  background: setting.$color-sub;
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  li{
+    padding: 8px;
+    padding-left: 28px;
+    text-indent: -1em;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+
+    &:before{
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: setting.$color-main;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 0.5em;
+      margin-top: -4px;
+    }
+  }
+}
+
+@media (min-width: 768px){
+  .p-feature__list{
+    margin-bottom: 0;
+  }
+}
+
+/*================================
+	背景
+=================================*/
+  .p-feature__item01{
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: "";
+      background: #F5F3EE;
+      z-index: -1;
+      bottom: 0;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  .p-feature__item02{
+    position: relative;
+
+    &:after{
+      position: absolute;
+      content: "";
+      background: #F5F3EE;
+      z-index: -1;
+      bottom: 0;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+@media (min-width: 1024px){
+  
+  .p-feature__item01{
+    position: relative;
+
+    &:after{
+      top: 0;
+      left: -60px;
+    }
+  }
+
+  .p-feature__item02{
+    position: relative;
+
+    &:after{
+      top: 0;
+    }
+  }
+}

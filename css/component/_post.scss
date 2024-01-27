@@ -7,10 +7,24 @@
 }
 
 .c-post__header{
+  padding: 16px 0;
+
   h1{
     font-size: 20px;
     line-height: 1.5;
     margin: 16px 0;
+    position: relative;
+    padding-top: 12px;
+
+    &:after{
+      position: absolute;
+      background: setting.$color-main;
+      height: 2px;
+      width: 48px;
+      left: 0;
+      top: -10px;
+      content: "";
+    }
   }
 }
 
@@ -24,18 +38,24 @@
 .c-post__meta{
   display: flex;
   align-items: center;
+
+  time{
+    font-size: 14px;
+  }
 }
 
 .c-post__category{
   font-size: 14px;
-  padding: 4px 16px;
-  margin-right: 12px;
-  background: #F9B0B0;
-  border-radius: 2px;
+  background-color: #eaeaea;
+  color: #808080;
+  padding: 2px 12px;
+  margin-right: 8px;
   display: inline-block;
-  vertical-align: middle;
-  font-weight: bold;
-  color: #fff;
+  transition: .5s;
+
+  &:hover{
+    opacity: .6;
+  }
 }
 
 .c-post__thumbnail{
@@ -71,11 +91,11 @@
   }
 
   img{
-    margin-bottom: 40px;
+    margin-bottom: 52px;
   }
 
   ul, ol{
-    background-color: setting.$color-accent2;
+    background-color: #fafafa;
     border: dashed 1px setting.$color-main;
     padding: 40px 16px;
     margin-bottom: 60px;
@@ -144,7 +164,12 @@
     font-weight: bold;
     color: setting.$color-link;
     text-decoration: underline;
+      transition: .5s;
+
+  &:hover{
+    opacity: .6;
   }
+}
 
   table{
     max-width: 800px;
@@ -158,7 +183,6 @@
 
 
   th{
-    
     text-align: center;
     border-right: 1px solid #CED0D6;
     border-bottom: 1px solid #CED0D6;
@@ -188,10 +212,11 @@
   }
 }
 
+/*================================
+	PC
+=================================*/
 @media (min-width: 1024px){
   .c-post__header{
-    padding: 16px 0;
-
     h1{
       font-size: 24px;
     }

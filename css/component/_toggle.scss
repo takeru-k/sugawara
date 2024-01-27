@@ -1,0 +1,92 @@
+@use "../setting/setting";
+
+.c-toggle{
+  margin-top: 24px;
+}
+
+.c-toggle__contents{
+  padding-bottom: 16px;
+  border-bottom: 1px solid #aaa;
+}
+
+.q{
+  display: inline-block;
+  width: 24px;
+  font-weight: bold; 
+  margin-right: 8px;
+  color: setting.$color-main;
+}
+
+.a{
+  display: inline-block;
+  width: 24px;
+  font-weight: bold; 
+  margin-right: 8px;
+}
+
+.c-toggle__header {
+	position: relative;
+  margin-top: 12px;
+	padding: 12px 48px 12px 12px;
+	cursor: pointer;
+  display: flex;
+}
+
+dd{
+  padding: 12px;
+  display: flex;
+  background: #f7f7f7;
+}
+
+.c-toggle__btn {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+	display: block;
+	width: 24px;
+	height: 24px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 50%;
+}
+
+.c-toggle__btn:before, .c-toggle__btn:after {
+	display: block;
+	content: '';
+	background-color: setting.$color-main;
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.c-toggle__btn:before {
+	width: 2px;
+	height: 10px;
+}
+
+.c-toggle__header.selected .c-toggle__btn:before {
+	content: normal;
+}
+
+.c-toggle__contents dd {
+	display: none;
+}
+
+@media (min-width: 1024px){
+  .c-ftoggle{
+  margin-top: 48px;
+}
+
+.c-ftoggle__contents{
+  padding-bottom: 24px;
+}
+
+.c-ftoggle__header{
+  margin-top: 24px;
+}
+}

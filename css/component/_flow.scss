@@ -1,31 +1,24 @@
 @use "../setting/setting";
 
 .c-flow{
-  max-width: 800px;
-  padding-top: 32px;
-  margin: 0 auto;
+  padding: 40px 0;
+  border-top: 1px solid #dadada;
 }
 
 .c-flow__list{
+  max-width: 800px;
+  padding-top: 32px;
+  margin: 0 auto;
   position: relative;
-
-  &:before{
-    background: setting.$color-main;
-    content: "";
-    height: 94%;
-    left: 0;
-    position: absolute;
-    top: calc(1.22449vw + 10.40816px);
-    width: 2px;
-  }
 }
 
 .c-flow__item{
-  padding-bottom: 40px;
-  padding-left: 20px;
+  padding: 24px 16px;
   display: flex;
   justify-content: space-between;
   position: relative;
+  box-shadow: 0 3px 25px rgba(0,0,0,0.06);
+  margin-bottom: 24px;
 
   span{
     background: setting.$color-main;
@@ -37,6 +30,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: setting.$font-en;
 
     @media (min-width: 640px){
       width: 40px;
@@ -55,32 +49,10 @@
     }
 
   }
-
-  &:before{
-    background:  setting.$color-main;
-    border-radius: 50%;
-    content: "";
-    height: calc(0.2449vw + 6.08163px);
-    left: calc(-0.16327vw - 1.38776px);
-    position: absolute;
-    top: calc(1.22449vw + 10.40816px);
-    width: calc(0.2449vw + 6.08163px);
-  }
-  
-  &:after{
-    border-bottom: 2px dotted setting.$color-main;
-    content: "";
-    height: 2px;
-    left: 0;
-    position: absolute;
-    top: calc(1.38776vw + 11.79592px);
-    width: 7vw;
-    z-index: -1;
-  }
 }
 
 .c-flow__content{
-  width: 84%;
+  width: 88%;
 
   p{
     padding-top: 12px;
@@ -89,12 +61,35 @@
 
 @media (min-width: 768px){
   .c-flow__item{
-    margin-bottom: calc(3.26531vw + 27.7551px);
-    padding-left: calc(4.08163vw + 24.69388px);
+    margin-bottom: 24px;
   }
 
   .c-flow__content{
     width: 90%;
     padding-top: 12px;
+  }
+}
+
+/*================================
+	PC
+=================================*/
+@media (min-width: 1024px){
+  .c-flow{
+    padding: 88px 0 40px;
+  }
+
+  .c-flow__list{
+    margin-top: 24px;
+  }
+
+  .c-flow__item{
+    padding: 28px 28px 40px;
+    margin-bottom: 40px;
+  }
+
+  .c-flow__content{
+    h3{
+      font-size: 20px;
+    }
   }
 }

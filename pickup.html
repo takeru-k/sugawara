@@ -6,140 +6,229 @@
 
   <title>菅原工務店</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__logos">
+        <div class="l-header__logo">
+          <a href="index.html"><img src="images/header/logo.jpg" alt=""></a>
+        </div><!-- /.l-header__logo -->
 
-<header class="l-header">
-  <div class="l-header__inner">
-    <div class="l-header__logos">
-      <div class="l-header__logo">
-        <a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
-      </div><!-- /.l-header__logo -->
-      <div class="l-header__logo">
-        <img src="images/logo/logo-pana.svg" alt="">
-      </div><!-- /.l-header__logo -->
-    </div><!-- /.l-header__logos -->
+        <div class="l-header__logo">
+          <img src="images/header/logo-pana.png" alt="">
+        </div><!-- /.l-header__logo -->
 
-     <button type="button" class="c-hamburger js-btn">
-      <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
-    </button><!-- /.c-hamburger -->
+      </div><!-- /.l-header__logos -->
 
-    <nav class="l-header__nav">
-      <ul class="l-header__menu">
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="feature.html">特長</a></li>
-        <li><a href="newly.html">新築</a></li>
-        <li><a href="reform.html">リフォーム</a></li>
-        <li><a href="about.html">会社概要</a></li>
-        <li><a href="works.html">施工事例</a></li>
-        <li><a href="blog.html">ブログ</a></li>
-        <li class="l-header__contact"><a href="contact.html">お問い合わせ</a></li>
-      </ul><!-- /.l-header__menu -->
-    </nav>
-  </div><!-- /.l-header__inner -->
-</header><!-- /.l-header -->  
+      <button type="button" class="c-hamburger js-btn">
+        <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
+      </button><!-- /.c-hamburger -->
 
-<main>
-  <section class="p-work">
+      <nav class="l-header__nav">
+        <ul class="l-header__menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="feature.html">特長・強み</a></li>
+          <li><a href="newly.html">新築・建替え</a></li>
+          <li><a href="renovation.html">リノベーション</a></li>
+          <li><a href="reform.html">リフォーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="blog.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul><!-- /.l-header__menu -->
+      </nav>
+    </div><!-- /.l-header__inner -->
+  </header><!-- /.l-header -->  
+
+  <div class="l-pageHeader">
+    <div class="l-pageHeader__heading">
+      <span>works</span>
+      <h1>建築実例</h1>
+    </div><!-- /.l-pageHeader__heading -->
+    <div class="l-pageHeader__img">
+      <img src="images/common/pageHeader.jpg" alt="">
+    </div><!-- /.l-pageHeader__img -->
+  </div><!-- /.l-pageHeader -->
+
+  <section class="c-section">
     <div class="l-inner">
-      <article class="c-post">
-        <header class="c-post__header">
+      <article class="p-single">
+        <div class="p-single__header">
+          <span>新築戸建</span>
+          <h1>完全分離型二世帯住宅の家</h1>
 
-          <h1>完全分離型2世帯住宅・フルリノベーション・増築</h1>
-        </header><!-- /.c-post__header -->
+          <div class="p-single__thumbnail">
+            <img src="images/sample/sample2.jpg" alt="">
+          </div><!-- /.p-single__thumbnail -->
+        </div><!-- /.p-single__header -->
 
-         <figure class="c-post__thumbnail">
-          <img src="images/sample1.jpeg" alt="">
-        </figure><!-- /.c-post__thumbnail -->
+        <div class="p-single__info">
+          <div class="p-single__table">
+            <table>
+              <tbody>
+                <tr>
+                  <th>延床面積</th>
+                  <td>123.40㎡ ［45.67坪］（１階 78.90㎡、２階 67.89㎡）</td>
+                </tr>
+                <tr>
+                  <th>敷地面積</th>
+                  <td>345.67㎡ ［98.76坪］</td>
+                </tr>
+                <tr>
+                  <th>家族構成</th>
+                  <td>2世帯6人</td>
+                </tr>
+                <tr>
+                  <th>工事期間</th>
+                  <td>90日間</td>
+                </tr>
+              </tbody>
+            </table>
+          </div><!-- /.p-single__table -->
+        </div><!-- /.p-single__info -->
 
-        
-        
-        <div class="c-post__main">
-          <p><strong>別棟か、建て替えか、リフォームか。</strong>60代親世帯と30代子世帯それぞれの住まいのご相談を承りました。別棟、建て替え、リフォームなど様々な選択肢がありましたが<strong>性能を高めて既存の資産を生かすご提案</strong>をしました。</p>
+        <div class="p-single__body">
+          <p>60代親世帯と30代子世帯それぞれの住まいのご相談を承りました。</p>
+          <p>別棟、建て替え、リフォームなど様々な選択肢がありましたが、性能を高めて既存の資産を生かすご提案をしました。玄関ホールの一ヶ所だけをつないだ完全分離型のプランにすることで世帯ごとにほどよい距離を保ちながら、水廻りの配置を上下階揃えることでコストダウンに繋がり維持管理がしやすくなりました。</p>
 
-          <ul>
-            <li>玄関ホール一ヶ所だけをつないだ完全分離型のプラン</li>
-            <li>水廻りの配置を上下階揃えることでコストダウン</li>
-            <li>1階世帯が親世帯、2階が子世帯の上下でプライバシーを確保</li>
-          </ul>
+          <div class="p-single__img">
+            <figure>
+              <img src="images/pickup/pickup06.JPG" alt="">
+            </figure>
+          </div><!-- /.p-single__img -->
+
+          <p>1階世帯が親世帯、2階が子世帯の上下で住まい空間を分離させたスタイル。各世帯のプライバシーを保ちつつ、お互いが気兼ねなく生活出来ます。</p>
+
+          <div class="p-single__img2">
+            <figure>
+              <img src="images/pickup/pickup07.JPG" alt="">
+            </figure>
+            <figure>
+              <img src="images/pickup/pickup08.JPG" alt="">
+            </figure>
+          </div><!-- /.p-single__img -->
+
+            <figure>
+              <img src="images/pickup/pickup09.JPG" alt="">
+            </figure>
+
+            <p>ペットが自由に行き来する部屋には耐久性の高い腰壁クロスを採用。動きやすい・使いやすいを基本に玄関～居室までを計画的に配置し、生活動線上の段差をなくしました。</p>
+
+            <figure>
+              <img src="images/pickup/pickup10.JPG" alt="">
+            </figure>
+
+            <p>施主様の思い入れのあるドアを既存の建物から移設。</p>
+
+            <figure>
+              <img src="images/pickup/pickup11.JPG" alt="">
+            </figure>
+
+            <p>ライフステージの変化を見据えてトイレ・水廻りには手すりと下地を設けました。水廻りをまとめることで動線がよくなり家事の効率が上ります。</p>
+          <div class="p-single__img2">
+            <figure>
+              <img src="images/pickup/pickup12.JPG" alt="">
+            </figure>
+            <figure>
+              <img src="images/pickup/pickup13.JPG" alt="">
+            </figure>
+          </div><!-- /.p-single__img -->
+
+          <p>リビングの天井を上げることで梁が見え、デザイン性に優れた開放感のある空間が生まれます。</p>
+
+             <figure>
+              <img src="images/pickup/pickup14.JPG" alt="">
+            </figure>
+
+          <p>天井に段差ができ、見えない壁を作ったような仕切られた印象となり、落ち着いた雰囲気を演出してくれます。</p>
+
+                      <figure>
+              <img src="images/pickup/pickup15.JPG" alt="">
+            </figure>
+
+            <p>お子様の成長に合わせて後から仕切れるように設計しました。将来、スイッチやコンセントを増設出来るように壁の中に配線をしています。テレビ裏にクローゼットを配置する事で、リビング廻りで使用するものを収納できる他、配線類も納まりすっきりとします。</p>
+                      <figure>
+              <img src="images/pickup/pickup18.JPG" alt="">
+            </figure>
+
+          <div class="p-single__img2">
+            <figure>
+              <img src="images/pickup/pickup16.JPG" alt="">
+            </figure>
+            <figure>
+              <img src="images/pickup/pickup17.JPG" alt="">
+            </figure>
+          </div><!-- /.p-single__img -->
 
 
-          <p>上記の理想の住まいを実現するために、<strong>フルリノベーションと増築を同時に</strong>行いました。</p>
 
 
-          <h2>1Fのこだわり</h2>
-          <p>動きやすい・使いやすいを基本に玄関～居室までを計画的に配置し、生活動線上の段差をなくしました。</p>
-          <img src="images/pickup/pickup01.jpg" alt="">
+          <p>完全分離型の二世帯住宅は世代ごとの生活時間帯や価値観、ライフスタイルの違いを尊重しながら、間取りやコーディネートを検討する事が可能です。1階はナチュラルで暖かみのある空間。</p>
 
+          <p>2階は白を基調とし温もりを感じさせる木目と上品な印象のグレーで統一した住宅が完成しました。</p>
 
-          <p>ペットが自由に行き来する部屋には耐久性の高い腰壁クロスを採用。</p>
-          <img src="images/pickup/pickup02.jpg" alt="">
+            <figure>
+              <img src="images/pickup/pickup19.JPG" alt="">
+            </figure>
 
+                      <div class="p-single__img2">
+            <figure>
+              <img src="images/pickup/pickup20.JPG" alt="">
+            </figure>
+            <figure>
+              <img src="images/pickup/pickup21.JPG" alt="">
+            </figure>
+          </div><!-- /.p-single__img -->
 
-          <p>洗面脱衣所を二坪確保して広い空間にしました。洗う・干す・畳む・仕舞うを一つの空間で。</p>
-          <img src="images/pickup/pickup03.jpg" alt="">
+        </div><!-- /.p-single__body -->
 
-          <p>ライフステージの変化を見据えてトイレ・水廻りには手すりと下地を設けました。水廻りをまとめることで動線がよくなり家事の効率が上ります。</p>
-
-          <h2>2Fのこだわり</h2>
-          <img src="images/pickup/pickup01.jpg" alt="">
-          <p>リビングの天井を上げることで梁が見え、デザイン性に優れた開放感のある空間が生まれます。天井に段差ができ、見えない壁を作ったような仕切られた印象となり、落ち着いた雰囲気を演出してくれます。</p>
-
-          <p>お子様の成長に合わせて後から仕切れるように設計しました。将来、スイッチやコンセントを増設出来るように壁の中に配線をしています。</p>
-
-          <p>テレビ裏にクローゼットを配置する事で、リビング廻りで使用するものを収納できる他、配線類も納まりすっきりとします。</p>
-
-
-
-          
-
-        </div><!-- /.c-post__main -->
-
-      </article><!-- /.c-post -->
+      </article><!-- /.p-single -->
     </div><!-- /.l-inner -->
-  </section><!-- /.c-article -->
+  </section><!-- /.c-section -->
 
 
-<div class="c-sns">
+  <div class="c-sns">
     <div class="l-inner">
       <ul class="c-sns__list">
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://line.me/R/ti/p/@400zfili" target="_blank">
+            <img src="images/banner/line.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://www.facebook.com/sugakou1968" target="_blank">
+            <img src="images/banner/facebook.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://www.instagram.com/sugakou1968/" target="_blank">
+            <img src="images/banner/instagram.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://reform-club.panasonic.com/" target="_blank">
+            <img src="images/banner/panasonic.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
       </ul><!-- /.c-sns__list -->
     </div><!-- /.l-inner -->
   </div><!-- /.c-sns -->
 
-
- <div class="c-cta">
+  <div class="c-cta">
     <div class="l-inner">
       <div class="c-cta__wrapper">
         <div class="c-cta__heading">
@@ -151,7 +240,7 @@
         <div class="c-cta__info">
           <div class="c-cta__tel">
             <span>tel<a href="tel:0198-24-1459">0198-24-1459</a></span>
-            <p>受付時間 10：00〜17:00（月〜土）</p>
+            <p>受付時間 10：00〜18:00（月〜土）</p>
           </div><!-- /.c-cta__tel -->
 
           <div class="c-cta__btn">
@@ -162,43 +251,49 @@
     </div><!-- /.l-inner -->
     
   </div><!-- /.c-cta -->
-</main>
 
-<footer class="l-footer">
+  <footer class="l-footer">
     <div class="l-inner">
       <div class="l-footer__content">
         <div class="l-footer__info">
-          <h1>株式会社菅原工務店</h1>
-          <ul>
-            <li>〒025-0091<br>岩手県花巻市西大通り二丁目11番25号</li>
-            <li>tel:<a href="tel:0198-24-1459">0198-24-1459</a></li>
-          </ul>
+          <h1><img src="images/footer/logo-footer.svg" alt=""></h1>
+
+
         </div><!-- /.l-footer__info -->
 
         <ul class="l-footer__menu">
           <li><a href="index.html">ホーム</a></li>
           <li><a href="feature.html">特長</a></li>
-          <li><a href="newly.html">新築</a></li>
+          <li><a href="newly.html">新築・建替え</a></li>
+          <li><a href="renovation.html">リノベーション</a></li>
           <li><a href="reform.html">リフォーム</a></li>
           <li><a href="about.html">会社概要</a></li>
           <li><a href="works.html">施工事例</a></li>
-          <li><a href="blog.html">ブログ</a></li>
-          <li><a href="blog.html">お問い合わせ</a></li>
+          <li><a href="blog.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
         </ul><!-- /.l-footer__menu -->
       </div><!-- /.l-footer__content -->
+
+      <div class="l-footer__pana">
+        <img src="images/footer/logo-pana-footer.png" alt="">
+
+
+        <div class="l-footer__phrase">
+          <p>PanasonicリフォームClubは、独立・自営の会社が運営しています。</p>
+          <p>工事請負契約は、お客様とPanasonicリフォームClub運営会社との間で行われます。</p>
+        </div><!-- /.l-footer__phrase -->
+      </div><!-- /.l-footer__logo -->
+
 
       <small class="l-footer__copy"><a href="https://web-iwate.com/">&copy; Knowledge Service, inc.</a></small><!-- /.l-footer__copy -->
     </div><!-- /.l-inner -->
   </footer><!-- /.l-footer -->
-
-
-
   
-<script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script> 
 </body>
 </html>

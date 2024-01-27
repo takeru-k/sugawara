@@ -1,40 +1,43 @@
-.p-pickup{
-  position: relative;
+@use "../setting/setting";
 
-  &:after{
-    background: url('../images/top-Pickup.svg');
-    position: absolute;
-    content: '';
-    width: 88%;
-    height: 240px;
-    top: 0;
-    right: 0;
-  }
-  
+.p-pickup__button{
+  margin-bottom: 24px;
 }
 
 @media (min-width: 768px){
   .p-pickup{
-
-    &:after{
-    width: 48%;
-    height: 240px;
-    top: 50%;
-    left: 0;
-    z-index: -1;
+    padding-bottom: 0;
   }
+}
+
+/*================================
+	背景
+=================================*/
+.p-pickup__item{
+  position: relative;
+
+  &:after{
+    position: absolute;
+    content: "";
+    background: #F5F3EE;
+    z-index: -1;
+    top: -20px;
+    left: -20px;
+    width: 140px;
+    height: 140px;
   }
 }
 
 @media (min-width: 1024px){
-  .p-pickup{
+  
+  .p-pickup__item{
+    position: relative;
 
     &:after{
-    width: 40%;
-    height: 320px;
-    top: 40%;
-    left: 0;
-    z-index: -1;
-  }
+      top: 0;
+      left: -60px;
+      width: 200px;
+      height: 200px;
+    }
   }
 }

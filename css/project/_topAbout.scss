@@ -7,21 +7,15 @@
 
 .p-topAbout__heading{
   span{
-    display: block;
+    font-size: 14px;
     color: setting.$color-main;
     text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bold;
+    font-family: setting.$font-en;
+    letter-spacing: 1px;
   }
 
   h2{
-    font-size: 16px;
-  }
-
-  p{
     font-size: 20px;
-    padding-top: 12px;
-    font-weight: bold;
   }
 }
 
@@ -38,24 +32,29 @@
     border-bottom: 1px solid #DFDFDF;
     padding-left: 16px;
     color: setting.$color-main;
-    font-weight: bold;
+    transition: .5s;
 
     &:first-child{
       border-top: 1px solid #DFDFDF;
     }
+
+    
+    &:hover{
+      opacity: .6;
+    }
   }
 
   a{
-    padding: 25px 60px 25px 0;
+    padding: 25px 50px 25px 0;
     display: block;
     position: relative;
 
     &:before {
       position: absolute;
       content: "";
-      width: 24px;
-      height: 24px;
-      background: url(../images/icon/icon-triangle.svg) no-repeat center
+      width: 20px;
+      height: 20px;
+      background: url(../images/common/icon-triangle.svg) no-repeat center
         center/cover;
       right: 0;
       top: 50%;
@@ -67,10 +66,13 @@
 @media (min-width: 1024px){
   .p-topAbout__wrapper{
     display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 
   .p-topAbout__left{
-    width: 50%;
+    width: 48%;
     padding: 24px;
   }
 

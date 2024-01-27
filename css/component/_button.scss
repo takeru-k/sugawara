@@ -3,8 +3,6 @@
 .c-button{
   position: relative;
 
-  
-
   a{
     color: #fff;
     text-align: center;
@@ -15,18 +13,17 @@
     display: block;
     transition: .4s;
     position: relative;
-    font-family: setting.$font-serif;
 
     &:after{
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 10%;
-    transform: translateY(-50%);
-    background: url('../images/icon-arrow.svg') no-repeat;
-    background-size:cover;   
-    height: 16px;
-    width: 16px;
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 10%;
+      transform: translateY(-50%);
+      background: url('../images/icon-arrow.svg') no-repeat;
+      background-size:cover;   
+      height: 16px;
+      width: 16px;
     }
 
     @media (min-width: 768px){

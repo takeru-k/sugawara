@@ -6,64 +6,80 @@
 
   <title>菅原工務店</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__logos">
+        <div class="l-header__logo">
+          <a href="index.html"><img src="images/header/logo.jpg" alt=""></a>
+        </div><!-- /.l-header__logo -->
 
-<header class="l-header">
-  <div class="l-header__inner">
-    <div class="l-header__logos">
-      <div class="l-header__logo">
-        <a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
-      </div><!-- /.l-header__logo -->
-      <div class="l-header__logo">
-        <img src="images/logo/logo-pana.svg" alt="">
-      </div><!-- /.l-header__logo -->
-    </div><!-- /.l-header__logos -->
+        <div class="l-header__logo">
+          <img src="images/header/logo-pana.png" alt="">
+        </div><!-- /.l-header__logo -->
 
-     <button type="button" class="c-hamburger js-btn">
-      <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
-    </button><!-- /.c-hamburger -->
+      </div><!-- /.l-header__logos -->
 
-    <nav class="l-header__nav">
-      <ul class="l-header__menu">
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="feature.html">特長</a></li>
-        <li><a href="newly.html">新築</a></li>
-        <li><a href="reform.html">リフォーム</a></li>
-        <li><a href="about.html">会社概要</a></li>
-        <li><a href="works.html">施工事例</a></li>
-        <li><a href="blog.html">ブログ</a></li>
-        <li class="l-header__contact"><a href="contact.html">お問い合わせ</a></li>
-      </ul><!-- /.l-header__menu -->
-    </nav>
-  </div><!-- /.l-header__inner -->
-</header><!-- /.l-header -->  
+      <button type="button" class="c-hamburger js-btn">
+        <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
+      </button><!-- /.c-hamburger -->
 
-<main>
-  <section class="p-work">
+      <nav class="l-header__nav">
+        <ul class="l-header__menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="feature.html">特長・強み</a></li>
+          <li><a href="newly.html">新築・建替え</a></li>
+          <li><a href="renovation.html">リノベーション</a></li>
+          <li><a href="reform.html">リフォーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="blog.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul><!-- /.l-header__menu -->
+      </nav>
+    </div><!-- /.l-header__inner -->
+  </header><!-- /.l-header -->  
+
+  <div class="l-pageHeader">
+    <div class="l-pageHeader__heading">
+      <span>blog</span>
+      <h1>お知らせ</h1>
+    </div><!-- /.l-pageHeader__heading -->
+    <div class="l-pageHeader__img">
+      <img src="images/common/pageHeader.jpg" alt="">
+    </div><!-- /.l-pageHeader__img -->
+  </div><!-- /.l-pageHeader -->
+
+  <section class="c-section">
     <div class="l-inner">
-      <article class="c-post">
+            <article class="c-post">
         <header class="c-post__header">
+
+          <h1>【リフォーム住宅内覧会開催】 花巻市 12月17日(土)18日(日)19日(月)</h1>
+
           <div class="c-post__meta">
-            <div class="c-post__category">
-              <a href="archive.html">お知らせ</a>
-            </div><!-- /.c-post__category -->
+
 
             <time>2023年6月6日</time>
           </div><!-- /.c-post__meta -->
-
-          <h1>【リフォーム住宅内覧会開催】 花巻市 12月17日(土)18日(日)19日(月)</h1>
         </header><!-- /.c-post__header -->
 
          <figure class="c-post__thumbnail">
-          <img src="images/sample1.jpeg" alt="">
+          <img src="images/sample/sample2.jpg" alt="">
         </figure><!-- /.c-post__thumbnail -->
         
         <div class="c-post__main">
@@ -77,7 +93,7 @@
 
           <h2>大見出しが入ります</h2>
 
-          <img src="images/works.png" alt="">
+          <img src="images/sample1.jpeg" alt="">
 
           <ul>
             <li>リスト表示のサンプルです</li>
@@ -94,7 +110,7 @@
 
           <h4>小見出しが入ります</h4>
 
-          <img src="images/sample1.jpeg" alt="">
+          <img src="images/sample/sample1.jpg" alt="">
 
           <a href="">外部リンクはこのように表示されます</a>
         </div><!-- /.c-post__main -->
@@ -105,7 +121,7 @@
           <ul>
             <li>
               <a href="post.html">
-                <img src="images/sample1.jpeg" alt="">
+                <img src="images/sample/sample2.jpg" alt="">
 
                   <span>リフォーム</span>
                   <h3>施工事例のタイトルが入ります</h3>
@@ -114,7 +130,7 @@
             </li>
             <li>
               <a href="post.html">
-                <img src="images/sample1.jpeg" alt="">
+                <img src="images/sample/sample3.jpg" alt="">
 
                   <span>リフォーム</span>
                   <h3>施工事例のタイトルが入ります</h3>
@@ -123,7 +139,7 @@
             </li>
             <li>
               <a href="post.html">
-                <img src="images/sample1.jpeg" alt="">
+                <img src="images/sample/sample4.jpg" alt="">
 
                   <span>リフォーム</span>
                   <h3>施工事例のタイトルが入ります</h3>
@@ -132,7 +148,7 @@
             </li>
             <li>
               <a href="post.html">
-                <img src="images/sample1.jpeg" alt="">
+                <img src="images/sample/sample5.jpg" alt="">
 
                   <span>リフォーム</span>
                   <h3>施工事例のタイトルが入ります</h3>
@@ -145,42 +161,37 @@
         </aside><!-- /.c-related -->
       </article><!-- /.c-post -->
     </div><!-- /.l-inner -->
-  </section><!-- /.c-article -->
+  </section><!-- /.c-section -->
 
 
-<div class="c-sns">
+  <div class="c-sns">
     <div class="l-inner">
       <ul class="c-sns__list">
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://line.me/R/ti/p/@400zfili" target="_blank">
+            <img src="images/banner/line.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://www.facebook.com/sugakou1968" target="_blank">
+            <img src="images/banner/facebook.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://www.instagram.com/sugakou1968/" target="_blank">
+            <img src="images/banner/instagram.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://reform-club.panasonic.com/" target="_blank">
+            <img src="images/banner/panasonic.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
       </ul><!-- /.c-sns__list -->
     </div><!-- /.l-inner -->
   </div><!-- /.c-sns -->
 
-
- <div class="c-cta">
+  <div class="c-cta">
     <div class="l-inner">
       <div class="c-cta__wrapper">
         <div class="c-cta__heading">
@@ -192,7 +203,7 @@
         <div class="c-cta__info">
           <div class="c-cta__tel">
             <span>tel<a href="tel:0198-24-1459">0198-24-1459</a></span>
-            <p>受付時間 10：00〜17:00（月〜土）</p>
+            <p>受付時間 10：00〜18:00（月〜土）</p>
           </div><!-- /.c-cta__tel -->
 
           <div class="c-cta__btn">
@@ -203,43 +214,49 @@
     </div><!-- /.l-inner -->
     
   </div><!-- /.c-cta -->
-</main>
 
-<footer class="l-footer">
+  <footer class="l-footer">
     <div class="l-inner">
       <div class="l-footer__content">
         <div class="l-footer__info">
-          <h1>株式会社菅原工務店</h1>
-          <ul>
-            <li>〒025-0091<br>岩手県花巻市西大通り二丁目11番25号</li>
-            <li>tel:<a href="tel:0198-24-1459">0198-24-1459</a></li>
-          </ul>
+          <h1><img src="images/footer/logo-footer.svg" alt=""></h1>
+
+
         </div><!-- /.l-footer__info -->
 
         <ul class="l-footer__menu">
           <li><a href="index.html">ホーム</a></li>
           <li><a href="feature.html">特長</a></li>
-          <li><a href="newly.html">新築</a></li>
+          <li><a href="newly.html">新築・建替え</a></li>
+          <li><a href="renovation.html">リノベーション</a></li>
           <li><a href="reform.html">リフォーム</a></li>
           <li><a href="about.html">会社概要</a></li>
           <li><a href="works.html">施工事例</a></li>
-          <li><a href="blog.html">ブログ</a></li>
-          <li><a href="blog.html">お問い合わせ</a></li>
+          <li><a href="blog.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
         </ul><!-- /.l-footer__menu -->
       </div><!-- /.l-footer__content -->
+
+      <div class="l-footer__pana">
+        <img src="images/footer/logo-pana-footer.png" alt="">
+
+
+        <div class="l-footer__phrase">
+          <p>PanasonicリフォームClubは、独立・自営の会社が運営しています。</p>
+          <p>工事請負契約は、お客様とPanasonicリフォームClub運営会社との間で行われます。</p>
+        </div><!-- /.l-footer__phrase -->
+      </div><!-- /.l-footer__logo -->
+
 
       <small class="l-footer__copy"><a href="https://web-iwate.com/">&copy; Knowledge Service, inc.</a></small><!-- /.l-footer__copy -->
     </div><!-- /.l-inner -->
   </footer><!-- /.l-footer -->
-
-
-
   
-<script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script> 
 </body>
 </html>

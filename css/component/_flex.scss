@@ -1,8 +1,18 @@
+@use "../setting/setting";
+
 .c-flex{
   padding: 20px 0 40px;
 }
 
 .c-flex__heading{
+  span{
+    font-size: 14px;
+    color: setting.$color-main;
+    text-transform: uppercase;
+    font-family: setting.$font-en;
+    letter-spacing: 1px;
+  }
+
   h2{
     font-size: 20px;
   }
@@ -11,23 +21,7 @@
 .c-flex__text{
   p{
     padding-top: 12px;
-  }
-}
-
-.c-flex__img{
-  height: 100%;
-  
-
-  p{
-    font-size: 14px;
-    padding-top: 12px;
-    text-align: center;
-  }
-}
-
-@media not all and (min-width: 768px){
-  .c-flex__item + .c-flex__item{
-    padding-top: 24px;
+    line-height: 2;
   }
 }
 
@@ -36,7 +30,7 @@
   .c-flex{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 40px 0 60px;
   }
 
   .c-flex__item{
@@ -52,7 +46,7 @@
 
 @media (min-width: 1024px){
   .c-flex{
-    padding-top: 48px;
+    padding: 60px 0 72px;
   }
   .c-flex__item{
     width: 44%;
@@ -64,8 +58,10 @@
 
 
 .c-flex__heading{
+  padding-top: 12px;
   h2{
     font-size: 24px;
+
   }
 }
 }

@@ -6,25 +6,36 @@
 
 .c-works__item{
   padding-bottom: 24px;
+  transition: .5s;
+
+  &:hover{
+    opacity: .6;
+  }
 
   span{
-    font-size: 14px;
-    color: #F9B0B0;
-    border: 1px solid #F9B0B0;
-    padding: 2px 4px;
-    margin-top: 8px;
+    font-size: 12px;
+    background-color: setting.$color-sub;
+    color: setting.$color-main;
+    padding: 2px 12px;
+    margin-right: 8px;
     display: inline-block;
+    margin-top: 12px;
   }
 
   h3{
     font-size: 18px;
-    font-weight: normal;
-    padding-top: 4px;
+    padding-top: 8px;
   }
 
   p{
     font-size: 14px;
     padding-top: 4px;
+  }
+}
+
+.c-works__img{
+  img{
+    height: 240px;
   }
 }
 
@@ -44,15 +55,18 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 40px;
   }
 
   .c-works__item{
     width: 48%;
+    margin-bottom: 32px;
   }
 }
 
 @media (min-width: 1024px){
   .c-works{
+    
     &:after{
       content: '';
       display: block;
@@ -60,6 +74,6 @@
     }
   }
   .c-works__item{
-    width: 32%;
+    width: calc((100% - 60px) / 3);
   }
 }

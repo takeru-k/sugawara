@@ -1,110 +1,225 @@
 @use "../setting/setting";
 
+.p-topService{
+  padding: 40px 0;
+}
+
+.p-topService__items{
+  margin-top: 24px;
+}
+
 .p-topService__item{
   padding-bottom: 40px;
 }
 
-@media not all and (min-width: 768px){
-  .p-topService__img{
-    margin: 0 calc(50% - 50vw);
-    width: 100vw;
-  }
+.p-topService__image-sm{
+  display: none;  /* スマホでは非表示 */
 }
 
 .p-topService__heading{
-  writing-mode: vertical-rl;
-  line-height: 1.1;
+  position: relative;
+  margin-top: 40px;
 
-  span{
-    text-transform: uppercase;
-    color: setting.$color-main;
-    font-size: 14px;
-    letter-spacing: .1em;
-  }
-
-  h2{
+  /* 縦書きの見出し */
+  p{
+    writing-mode: vertical-rl;
     font-family: setting.$font-serif;
-    font-size: 20px;
-    font-weight: normal;
+    letter-spacing: .5em;
+    line-height: 1.4;
+    font-size: 24px;
+    margin: 0 auto;
+  }
+
+  /* 縦書きの見出し横の数字 */
+  &:after{
+    content: '01';
+    position: absolute;
+    top: -44px;
+    right: 80px;
+    font-size: 48px;
+    color: setting.$color-main;
+    opacity: .2;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Crimson Text', serif;
   }
 }
 
+/* 縦書きの見出し横の数字を増やす */
+.heading02:after{
+  content: '02';
+}
+
+.heading03:after{
+  content: '03';
+}
+
+/* スマホの余白調整 */
 .p-topService__texts{
-  display: flex;
-  padding-top: 16px;
+  margin-top: 24px;
 }
 
-.p-topService__text{
-  padding: 16px 0 0 24px;
+/* 横書きの見出しと文章 */
+.p-topService__textArea{
+  padding-top: 24px;
+  position: relative;
+  max-width: 500px;
+
+  /* 英語のサブタイトル */
+  span{
+    font-size: 14px;
+    color: setting.$color-main;
+    text-transform: uppercase;
+    font-family: setting.$font-en;
+    letter-spacing: 1px;
+  }
+
+  p{
+    padding-top: 12px;
+  }
 }
 
+
+/*================================
+	Tab
+=================================*/
 @media (min-width: 768px){
   .p-topService{
     padding: 64px 0;
   }
 
   .p-topService__items{
+    margin: 40px 0 0;
+  }
+
+  .p-topService__item:not(:last-child){
+    padding-bottom: 160px;
+  }
+
+  .p-topService__images{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    width: calc((100% - 1280px)/2 + 1280px);
   }
 
-  .p-topService__item{
-    width: 44%;
-  }
-
-  .p-topService__img{
-    height: 400px;
+  /* 一番小さい画像（全サービス共通） */
+  .p-topService__image-sm{
+    display: block;
+    width: 220px;
 
     img{
-      height: 100%;
+      margin-top: 120px;
+      width: 100%;
+      height: 200px;
     }
   }
 
-  .p-topService__item:first-child{
-    padding-top: 40px;
-  }
+  /* 「新築」のMサイズの画像 */
+  .p-topService__image-newly-md{
+    background-image: url(../images/newly/newly3.jpg);
+    background-size: cover;
+    height: 350px;
+    width: 38%;
 
-  .p-topService__item:nth-child(2){
-    .p-topService__texts{
-      flex-direction: row-reverse;
+    /* スマホ専用の画像を非表示 */
+    img{
+      display: none;
     }
-    
-    .p-topService__text{
-      padding: 24px 16px 0 0;
+  }
+
+  /* 「新築」の一番大きい画像 */
+  .p-topService__image-newly-lg{
+    background-image: url(../images/newly/newly2.jpg);
+    background-size: cover;
+    height:  400px;
+    width: calc(100% - 600px);
+    margin-left: 24px;
+  }
+
+  /* 「リノベーション」のMサイズの画像 */
+  .p-topService__image-renovation-md{
+    background-image: url(../images/renovation/renovation3.jpg);
+    background-size: cover;
+    height: 350px;
+    width: 38%;
+
+    /* スマホ専用の画像を非表示 */
+    img{
+      display: none;
     }
   }
-}
 
-@media (min-width: 1024px){
-  .p-topService__items{
-    display: flex;
-    justify-content: space-around;
-    
+  /* 「リノベーション」の一番大きい画像 */
+  .p-topService__image-renovation-lg{
+    background-image: url(../images/renovation/renovation2.jpg);
+    background-size: cover;
+    height:  400px;
+    width: calc(100% - 600px);
+    margin-left: 24px;
   }
 
-  .p-topService__item{
-    width: 40%;
-    position: relative;
+  /* 「リフォーム」のMサイズの画像 */
+  .p-topService__image-reform-md{
+    background-image: url(../images/reform/reform3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 38%;
+
+    /* スマホ専用の画像を非表示 */
+    img{
+      display: none;
+    }
   }
 
-  .p-topService__img{
-    width: 80%;
+  /* 「リフォーム」の一番大きい画像 */
+  .p-topService__image-reform-lg{
+    background-image: url(../images/reform/reform2.jpg);
+    background-size: cover;
+    height:  400px;
+    width: calc(100% - 600px);
+    margin-left: 24px;
   }
 
-  .-right{
-    margin-left: auto;
-  }
 
+  /* 縦書きの見出し */
   .p-topService__heading{
-    position: absolute;
-    top: 0;
+    width: 260px;
+      
+    p{
+      font-size: 24px;
+    }
 
-    h2{
-      font-size: 28px;
+    /* 数字の位置を調整 */
+    &:after{
+      top: -84px;
+      right: 24px;
+      font-size: 72px;
     }
   }
 
-  .-reform{
-    top: 40px;
+  .p-topService__texts{
+    display: flex;
+    flex-wrap: wrap;
+    margin: -40px auto 0;
+    align-items: center;
+  }
+
+
+  .p-topService__textArea{
+    padding-left: 98px;
+    padding-top: 48px;
+    width: 56.01%;
+    max-width: 500px;
+  }
+
+  /* 「リノベーションは横並びを逆にする */
+  .item02{
+    flex-direction: row-reverse;
+
+    .p-topService__textArea{
+      padding-right: 98px;
+      padding-left: 0;
+    }
   }
 }

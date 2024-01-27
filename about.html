@@ -6,58 +6,65 @@
 
   <title>菅原工務店</title>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 
+  <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- slick -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__logos">
+        <div class="l-header__logo">
+          <a href="index.html"><img src="images/header/logo.jpg" alt=""></a>
+        </div><!-- /.l-header__logo -->
 
-<header class="l-header">
-  <div class="l-header__inner">
-    <div class="l-header__logos">
-      <div class="l-header__logo">
-        <a href="index.html"><img src="images/logo/logo.jpg" alt=""></a>
-      </div><!-- /.l-header__logo -->
-      <div class="l-header__logo">
-        <img src="images/logo/logo-pana.svg" alt="">
-      </div><!-- /.l-header__logo -->
-    </div><!-- /.l-header__logos -->
+        <div class="l-header__logo">
+          <img src="images/header/logo-pana.png" alt="">
+        </div><!-- /.l-header__logo -->
 
-     <button type="button" class="c-hamburger js-btn">
-      <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
-    </button><!-- /.c-hamburger -->
+      </div><!-- /.l-header__logos -->
 
-    <nav class="l-header__nav">
-      <ul class="l-header__menu">
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="feature.html">特長</a></li>
-        <li><a href="newly.html">新築</a></li>
-        <li><a href="reform.html">リフォーム</a></li>
-        <li><a href="about.html">会社概要</a></li>
-        <li><a href="works.html">施工事例</a></li>
-        <li><a href="blog.html">ブログ</a></li>
-        <li class="l-header__contact"><a href="contact.html">お問い合わせ</a></li>
-      </ul><!-- /.l-header__menu -->
-    </nav>
-  </div><!-- /.l-header__inner -->
-</header><!-- /.l-header -->  
+      <button type="button" class="c-hamburger js-btn">
+        <span class="c-hamburger__line"></span><!-- /.c-hamburger__line -->
+      </button><!-- /.c-hamburger -->
 
-<div class="l-pageHeader">
-  <div class="l-pageHeader__heading">
-    <span>about us</span>
-    <h1>会社紹介</h1>
-  </div><!-- /.l-pageHeader__heading -->
-  <div class="l-pageHeader__img">
-    <img src="images/sample1.jpeg" alt="">
-  </div><!-- /.l-pageHeader__img -->
-</div><!-- /.l-pageHeader -->
+      <nav class="l-header__nav">
+        <ul class="l-header__menu">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="feature.html">特長・強み</a></li>
+          <li><a href="newly.html">新築・建替え</a></li>
+          <li><a href="renovation.html">リノベーション</a></li>
+          <li><a href="reform.html">リフォーム</a></li>
+          <li><a href="about.html">会社概要</a></li>
+          <li><a href="works.html">施工実績</a></li>
+          <li><a href="blog.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul><!-- /.l-header__menu -->
+      </nav>
+    </div><!-- /.l-header__inner -->
+  </header><!-- /.l-header -->  
 
-<main>
- <section class="c-section">
+  <div class="l-pageHeader">
+    <div class="l-pageHeader__heading">
+      <span>about us</span>
+      <h1>会社紹介</h1>
+    </div><!-- /.l-pageHeader__heading -->
+    <div class="l-pageHeader__img">
+      <img src="images/common/pageHeader.jpg" alt="">
+    </div><!-- /.l-pageHeader__img -->
+  </div><!-- /.l-pageHeader -->
+
+ <section class="c-section" id="profile">
     <div class="l-inner">
       <div class="c-section__heading">
         <span>profile</span>
@@ -65,148 +72,138 @@
       </div><!-- /.c-section__heading -->
 
       <div class="c-table">
-            <table>
-              <tbody>
-                <tr>
-                  <th>会社名</th>
-                  <td>株式会社 菅原工務店</td>
-                </tr>
-                <tr>
-                  <th>代表者</th>
-                  <td>代表取締役　菅原　利直</td>
-                </tr>
-                <tr>
-                  <th>所在地</th>
-                  <td>岩手県花巻市西大通り二丁目11番25号</td>
-                </tr>
-                <tr>
-                  <th>TEL</th>
-                  <td>0198-24-1459</td>
-                </tr>
-                <tr>
-                  <th>FAX</th>
-                  <td>0198-24-0248</td>
-                </tr>
-                <tr>
-                  <th>設立</th>
-                  <td>1968年(昭和43年)4月</td>
-                </tr>
-                <tr>
-                  <th>資本金</th>
-                  <td>10,000,000円</td>
-                </tr>
-                <tr>
-                  <th>許認可</th>
-                  <td>
-                    <ul class="c-table__list">
-                      <li>建設業　岩手県知事許可（般-4）第8977号</li>
-                      <li>二級建築士事務所　岩手県知事登録　第お（2607）2910号</li>
+        <table>
+          <tbody>
+            <tr>
+              <th>会社名</th>
+              <td>株式会社菅原工務店</td>
+            </tr>
+            <tr>
+              <th>代表者</th>
+              <td>代表取締役　菅原 利直</td>
+            </tr>
+            <tr>
+              <th>所在地</th>
+              <td>岩手県花巻市西大通り二丁目11番25号</td>
+            </tr>
+            <tr>
+              <th>TEL</th>
+              <td>0198-24-1459</td>
+            </tr>
+            <tr>
+              <th>FAX</th>
+              <td>0198-24-0248</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>1968年(昭和43年)4月</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>10,000,000円</td>
+            </tr>
+            <tr>
+              <th>許認可</th>
+              <td>
+                <ul class="c-table__list">
+                  <li>建設業　岩手県知事許可（般-4）第8977号</li>
+                  <li>二級建築士事務所　岩手県知事登録　第お（2607）2910号</li>
 
-                    </ul><!-- /.c-table__list -->
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                </ul><!-- /.c-table__list -->
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-          </div><!-- /.c-table -->
+      </div><!-- /.c-table -->
 
-          <div class="c-about__img">
-            <img src="images/profile.jpg" alt="">
-          </div><!-- /.p-about__img -->
+      <div class="p-profile__img">
+        <img src="images/about/profile.jpg" alt="">
+      </div><!-- /.p-profile__img -->
 
     </div><!-- /.l-inner -->
   </section><!-- /.c-section -->
 
-  <section class="c-section">
-    <div class="l-inner">
-      <div class="c-section__heading">
-        <span>partners</span>
-        <h2>PanasonicリフォームClubについて</h2>
-      </div><!-- /.c-section__heading -->
-
-      <div class="c-about__pana">
-        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
-        <p>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。</p>
-        <p>公式サイトは<a href="">こちら</a>からどうぞ。</p>
-      </div><!-- /.c-about__pana -->
-    </div><!-- /.l-inner -->
-  </section><!-- /.c-section -->
-
-  <section class="c-section">
+  <section class="c-section" id="staff">
     <div class="l-inner">
       <div class="c-section__heading">
         <span>members</span>
         <h2>スタッフ紹介</h2>
       </div><!-- /.c-section__heading -->
 
-      <ul class="c-about__member">
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>店長</span>菅原 リエ子</h3>
-            <p>長年この業界に携わってきましたが、改めて思うことは、家づくりというのは、間取りやデザインももちろん大切ですが、やはり家の基本性能が一番重要だということです。菅原工務店では、ご予算に合わせて断熱・気密・耐震・メンテナンス性のバランスを重視し、お客様が快適に末永くお住まい頂ける家を造ることを心掛けています。注文住宅ならではの自由度の高い家造りで、お客様一人一人に合ったお家をご提案させていただきます。</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>設計・工務</span>菅原 翔太</h3>
-            <p>地場工務店の技術者として、地域の皆様の住まいの悩みを解決する事に、使命感と誇りをもって業務にあたっています。学生時代まで遡ると15年間木造建築に向き合ってきました。お客様一人ひとりのライフスタイルに合わせたプランをご提案できるように、会話を大切にしています。趣味はパソコンいじりで、得意なスポーツはバレーボールとスノーボードです。</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>棟梁</span>白藤　祐己</h3>
-            <p>清く　正しく　美しく</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>大工</span>小野　正則</h3>
-            <p>当社に勤めて20余年。お客様に喜んでもらえる瞬間が何よりも嬉しいです。家造りは妥協しないこと。細部まで丁寧にこだわって造っています。お客様に長く愛される家を造るように日々努力しています。</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>大工</span>大森　卓也</h3>
-            <p>元気もりもり大森です！1級技能士目指し奮闘中。こだわりのモノづくり技術者になれるよう頑張ります。</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>工務・設備施工</span>上妻　芳春</h3>
-            <p>住宅設備のことならお任せください</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>アシスタント</span>宇夫方　一枝</h3>
-            <p>主に電話対応、メンテナンスの手配など事務をしています。細かな仕事でもお客様の立場になって対応させて頂きます。直接お客様にお会いする機会は少ないですが、いつでも元気に笑顔を忘れず、お客様に喜んで頂けるように頑張ります。</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
-        <li class="c-about__item">
-          <img src="images/sample1.jpeg" alt="">
-          <div class="c-about__texts">
-            <h3><span>アシスタント</span>菅原　千尋</h3>
-            <p>SNSで最新住宅トレンドやお家のことについて見るのが好きです。プランをご提案する際には、お客様の持っている家電、家具の大きさから、何をどこに収納したいのか等、綿密に打ち合わせをさせて頂きます。後悔しないように時間をかけて一緒に素敵なお家を作りましょう。</p>
-          </div><!-- /.c-about__texts -->
-          
-        </li><!-- /.c-about__list -->
+      <ul class="p-member">
+        <li class="p-member__item">
+          <img src="images/about/staff_rieko.jpg" alt="">
 
-      </ul><!-- /.c-about__member -->
+          <div class="p-member__texts">
+            <h3><span>店長</span>菅原 リエ子</h3>
+            <p>長年この業界に携わって改めて思うことは、家づくりというのは、間取りやデザインももちろん大切ですが、やはり家の基本性能が一番重要だということです。当社では、ご予算に合わせて断熱・気密・耐震・メンテナンス性のバランスを重視し、お客様が快適に末永くお住まい頂ける家を造ることを心掛けています。注文住宅ならではの自由度の高さで、お客様一人一人に合ったご提案をさせていただきます。</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff_shota.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>店長</span>菅原 リエ子</h3>
+            <p>長年この業界に携わって改めて思うことは、家づくりというのは、間取りやデザインももちろん大切ですが、やはり家の基本性能が一番重要だということです。当社では、ご予算に合わせて断熱・気密・耐震・メンテナンス性のバランスを重視し、お客様が快適に末永くお住まい頂ける家を造ることを心掛けています。注文住宅ならではの自由度の高さで、お客様一人一人に合ったご提案をさせていただきます。</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff_shirafuji.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>棟梁</span>白藤 祐己</h3>
+            <p>清く　正しく　美しく</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff_ono.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>大工</span>小野 正則</h3>
+            <p>当社に勤めて20余年。お客様に喜んでもらえる瞬間が何よりも嬉しいです。家造りは妥協しないこと。細部まで丁寧にこだわって造っています。お客様に長く愛される家を造るように日々努力しています。</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff_omori.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>大工</span>大森 卓也</h3>
+            <p>元気もりもり大森です! 1級技能士目指し奮闘中。こだわりのモノづくり技術者になれるよう頑張ります。</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>工務・設備施工</span>上妻 芳春</h3>
+            <p>住宅設備のことならお任せください</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff_kazue.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>アシスタント</span>宇夫方 一枝</h3>
+            <p>主に電話対応、メンテナンスの手配など事務をしています。細かな仕事でもお客様の立場になって対応させて頂きます。直接お客様にお会いする機会は少ないですが、いつでも元気に笑顔を忘れず、お客様に喜んで頂けるように頑張ります。</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+
+        <li class="p-member__item">
+          <img src="images/about/staff_chihiro.jpg" alt="">
+
+          <div class="p-member__texts">
+            <h3><span>アシスタント</span>菅原 千尋</h3>
+            <p>SNSで最新住宅トレンドやお家のことについて見るのが好きです。プランをご提案する際には、お客様の持っている家電、家具の大きさから、何をどこに収納したいのか等、綿密に打ち合わせをさせて頂きます。後悔しないように時間をかけて一緒に素敵なお家を作りましょう。</p>
+          </div><!-- /.p-member__texts -->
+        </li><!-- /.p-member__item -->
+      </ul><!-- /.p-member -->
 
     </div><!-- /.l-inner -->
   </section><!-- /.c-section -->
@@ -222,22 +219,22 @@
         <div class="c-flex__item">
           <div class="c-flex__text">
             <p>私たち株式会社菅原工務店は、岩手県花巻市を中心にリフォームや新築、増改築、小規模の修繕等を行う工務店です。</p>
-            <p>地元の工務店として唱和43年の創業より半世紀以上にわたり地域の皆さまと歩んできました。</p>
+            <p>地元の工務店として昭和43年の創業より半世紀以上にわたり地域の皆さまと歩んできました。</p>
             <p>私たちの強みは地元の風土を熟知した建築士と大工の存在です。経験豊富なスタッフがお客様の想いをフルオーダーメイドの住宅として建築・リフォームし、アフターフォローまで一貫して行います。</p>
             <p>今後も住む人の幸せを考え、地元工務店だからこそ出来る家づくりを心がけてまいります。</p>
 
           </div><!-- /.c-flex__text -->
         </div><!-- /.c-flex__item -->
 
-        <div class="c-flex__item c-flex__img">
-          <img src="images/portrait.jpg" alt="">
+        <div class="c-flex__item c-flex__img c-about__portrait">
+          <img src="images/about/portrait.jpg" alt="">
           <p>代表取締役　菅原 利直</p>
         </div><!-- /.c-flex__img -->
       </div><!-- /.c-flex -->
     </div><!-- /.l-inner -->
   </section><!-- /.c-section -->
 
-  <section class="c-section">
+  <section class="c-section" id="access">
     <div class="l-inner">
       <div class="c-section__heading">
         <span>access</span>
@@ -246,7 +243,7 @@
 
       <div class="c-flex">
         <div class="c-flex__item">
-<div class="c-table c-about__access">
+          <div class="c-table c-about__access">
             <table>
               <tbody>
                 <tr>
@@ -255,15 +252,15 @@
                 </tr>
                 <tr>
                   <th>アクセス</th>
-                  <td><a href="">Googleマップ</a>を開く</td>
+                  <td><a href="https://maps.app.goo.gl/dgrFgGoJa7xBuvdbA">Googleマップ</a>を開く</td>
                 </tr>
                 <tr>
                   <th>営業時間</th>
-                  <td>9:00~18:00</td>
+                  <td>10:00~18:00</td>
                 </tr>
                 <tr>
                   <th>定休日</th>
-                  <td>日曜・祝日</td>
+                  <td>日曜</td>
                 </tr>
                 <tr>
                   <th>駐車場</th>
@@ -276,45 +273,57 @@
         </div><!-- /.c-flex__item -->
 
         <div class="c-flex__item c-flex__img">
-          <img src="images/shop.jpg" alt="">
+          <img src="images/about/shop.jpg" alt="">
         </div><!-- /.c-flex__img -->
       </div><!-- /.c-flex -->
     </div><!-- /.l-inner -->
   </section><!-- /.c-section -->
 
-<div class="c-sns">
+  <section class="c-section" id="panasonic">
+    <div class="l-inner">
+      <div class="c-section__heading">
+        <span>partners</span>
+        <h2>PanasonicリフォームClubについて</h2>
+      </div><!-- /.c-section__heading -->
+
+      <div class="c-about__pana">
+        <p>PanasonicリフォームClubはパナソニックの理念に共感するリフォーム専門ショップのネットワークです。</p>
+        <p>リファイン」の名称のもと、リフォーム業界の先駆けとして始動して、40年あまり。地域に密着した活動で、お客様から信頼と高い評価をいただいてまいりました。その歴史と実績を受け継ぎながら、2016年4月1日より、「リファイン」は「PanasonicリフォームClub」へ進化いたしました。</p>
+        <p>「 PanasonicリフォームClubはこれからも、リフォームを通じて、皆様の新しい暮らしの実現をお手伝いしてまいります。（公式サイトより引用）</p>
+        <p>公式サイトは<a href="https://reform-club.panasonic.com/" target="_blank">こちら</a>からどうぞ。</p>
+      </div><!-- /.c-about__pana -->
+    </div><!-- /.l-inner -->
+  </section><!-- /.c-section -->
+
+
+  <div class="c-sns">
     <div class="l-inner">
       <ul class="c-sns__list">
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://line.me/R/ti/p/@400zfili" target="_blank">
+            <img src="images/banner/line.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://www.facebook.com/sugakou1968" target="_blank">
+            <img src="images/banner/facebook.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://www.instagram.com/sugakou1968/" target="_blank">
+            <img src="images/banner/instagram.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
         <li class="c-sns__item">
-          <a href="">
-            <img src="images/demo.png" alt="">
+          <a href="https://reform-club.panasonic.com/" target="_blank">
+            <img src="images/banner/panasonic.png" alt="">
           </a>
-          <p>LINEでいつでもお気軽にお問い合わせください</p>
         </li><!-- /.c-sns__item -->
       </ul><!-- /.c-sns__list -->
     </div><!-- /.l-inner -->
   </div><!-- /.c-sns -->
 
-
- <div class="c-cta">
+  <div class="c-cta">
     <div class="l-inner">
       <div class="c-cta__wrapper">
         <div class="c-cta__heading">
@@ -326,7 +335,7 @@
         <div class="c-cta__info">
           <div class="c-cta__tel">
             <span>tel<a href="tel:0198-24-1459">0198-24-1459</a></span>
-            <p>受付時間 10：00〜17:00（月〜土）</p>
+            <p>受付時間 10：00〜18:00（月〜土）</p>
           </div><!-- /.c-cta__tel -->
 
           <div class="c-cta__btn">
@@ -337,43 +346,49 @@
     </div><!-- /.l-inner -->
     
   </div><!-- /.c-cta -->
-</main>
 
-<footer class="l-footer">
+  <footer class="l-footer">
     <div class="l-inner">
       <div class="l-footer__content">
         <div class="l-footer__info">
-          <h1>株式会社菅原工務店</h1>
-          <ul>
-            <li>〒025-0091<br>岩手県花巻市西大通り二丁目11番25号</li>
-            <li>tel:<a href="tel:0198-24-1459">0198-24-1459</a></li>
-          </ul>
+          <h1><img src="images/footer/logo-footer.svg" alt=""></h1>
+
+
         </div><!-- /.l-footer__info -->
 
         <ul class="l-footer__menu">
           <li><a href="index.html">ホーム</a></li>
           <li><a href="feature.html">特長</a></li>
-          <li><a href="newly.html">新築</a></li>
+          <li><a href="newly.html">新築・建替え</a></li>
+          <li><a href="renovation.html">リノベーション</a></li>
           <li><a href="reform.html">リフォーム</a></li>
           <li><a href="about.html">会社概要</a></li>
           <li><a href="works.html">施工事例</a></li>
-          <li><a href="blog.html">ブログ</a></li>
-          <li><a href="blog.html">お問い合わせ</a></li>
+          <li><a href="blog.html">お知らせ</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
         </ul><!-- /.l-footer__menu -->
       </div><!-- /.l-footer__content -->
+
+      <div class="l-footer__pana">
+        <img src="images/footer/logo-pana-footer.png" alt="">
+
+
+        <div class="l-footer__phrase">
+          <p>PanasonicリフォームClubは、独立・自営の会社が運営しています。</p>
+          <p>工事請負契約は、お客様とPanasonicリフォームClub運営会社との間で行われます。</p>
+        </div><!-- /.l-footer__phrase -->
+      </div><!-- /.l-footer__logo -->
+
 
       <small class="l-footer__copy"><a href="https://web-iwate.com/">&copy; Knowledge Service, inc.</a></small><!-- /.l-footer__copy -->
     </div><!-- /.l-inner -->
   </footer><!-- /.l-footer -->
-
-
-
   
-<script
-  src="https://code.jquery.com/jquery-3.6.3.min.js"
-  integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/main.js"></script> 
 </body>
 </html>

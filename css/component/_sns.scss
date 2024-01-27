@@ -13,9 +13,10 @@
 .c-sns__item{
   width: 48%;
   padding-top: 20px;
+  transition: .4s;
 
-  p{
-    font-size: 12px;
+  &:hover{
+    opacity: .6;
   }
 }
 
@@ -25,5 +26,6 @@
   }
   .c-sns__item{
     width: 22%;
+    padding-top: 0;
   }
 }

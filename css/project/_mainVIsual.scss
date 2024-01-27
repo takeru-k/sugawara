@@ -5,7 +5,7 @@
 }
 
 .p-mainVisual__img{
-  height: 80vh;
+  height: 90vh;
   width: 100%;
 
   img{
@@ -17,36 +17,45 @@
 
 .p-mainVisual__copy{
   position: absolute;
-  top: 18%;
-  right: 10%;
+  top: 22%;
+  right: 12%;
   display: flex;
+  text-shadow: 0 0 20px rgba(0,0,0,.8);
 
   h1{
     writing-mode: vertical-rl;
     color: #fff;
     font-family: setting.$font-serif;
     letter-spacing: .2em;
+    line-height: 1.4;
+    margin-left: 16px;
   }
 
   p{
     writing-mode: vertical-rl;
     color: #fff;
-    font-family: setting.$font-serif;
     letter-spacing: .2em;
+    font-family: setting.$font-serif;
   }
 }
 
 @media (min-width: 1024px){
   .p-mainVisual__copy{
+    top: 16%;
     right: 14%;
 
     h1{
-      font-size: 40px;
-      padding-top: 24px;
+      font-size: 56px;
     }
 
     p{
-      font-size: 24px;
+      font-size: 20px;
+      margin-left: 16px;
+      margin-top: 8px;
     }
   }
+}
+
+.slick-slide{
+  height: 90vh;
 }
